@@ -46,7 +46,7 @@ export const Card = ({ item }: CardProps) => {
           <div
             className="bg-blue-600 h-1 rounded-full"
             style={{
-              width: `${(item.spent.value / (item.spent.value + item.available_to_spend.value)) * 100}%`,
+              width: `${(item.spent.value/(item.spent.value + item.available_to_spend.value)) * 100}%`,
             }}
           ></div>
         </div>
