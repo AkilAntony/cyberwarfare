@@ -8,9 +8,9 @@ const LayoutWrapper = ({ children }: { children: React.ReactNode }) => {
     <div className="sticky top-0 w-full z-10">
         <Navbar />
     </div>
-      <div className="w-full flex-1 mx-auto bg-[#f1f3f4] p-5 rounded-md">
+      <section className="w-full flex-1 mx-auto bg-[#f1f3f4] p-5 rounded-md">
         {children}
-      </div>
+      </section>
     </div>
   );
 };

@@ -25,7 +25,7 @@ const SpendCardSkeleton = () => {
         </div>
 
         {/* ProgressBar  */}
-        <div className="w-full bg-gray-200 rounded-full h-1 ">
+        <div className="w-full bg-gray-200 my-1 rounded-full h-1 ">
           <div
             className="bg-gray-200 animate-pulse h-1 rounded-full"
             style={{
