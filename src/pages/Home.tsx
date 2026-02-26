@@ -1,7 +1,6 @@
 import { Card } from "@/components/Card";
 import LayoutWrapper from "@/components/common/LayoutWrapper";
 import SearchInput from "@/components/common/SearchInput";
-import SpendCardSkeleton from "@/components/productCard/SpendCardSkeleton";
 import { useDebounce } from "@/hooks/useDebounce";
 import { API_RESPONSE } from "@/utils/data";
 import React, {
@@ -180,7 +179,7 @@ const Home = () => {
                   <Card key={item.name} item={item} />
                 )) :
              isLoading ? Array.from({ length: 3 }).map((_, i) => (
-                  <SpendCardSkeleton key={i} />
+                  <LoadingUI key={i} />
                 )) : null}
           </div>
       
